@@ -23,7 +23,7 @@
     <preference name="WindowsStorePublisherName" value="CN=Voith Digital Solutions Inc, O=Voith Digital Solutions Inc, L=York, S=PA, C=US" />
     <preference name="WindowsToastCapable" value="true" />
     <preference name="uap-target-min-version" value="10.0.10586.0" />
-    <preference name="DisallowOverscroll" value="true" />
+    <preference name="DisallowOverscroll" value="false" />
     <preference name="android-minSdkVersion" value="14" />
 
 </widget>
