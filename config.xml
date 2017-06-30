@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <widget xmlns="http://www.w3.org/ns/widgets" 
         xmlns:gap="http://phonegap.com/ns/1.0" 
-        id="com.voith.dsi.sysdb" 
+        id="com.voith.dsi.installationtest" 
         version="1.0">
   
   <name>Windows 10 Installation Test</name>
