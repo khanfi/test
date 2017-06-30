@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>TEST APP</title>
+</head>
+<body>
+    <section class="byline" style="display: block; margin: 0px auto; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        <div class="byline-content">
+            <section class="author-images" style="display: block; text-align: left; float: left; margin: 0px auto;">
+                <a href="https://www.html5rocks.com/profiles/#deannarubin" style="color: rgb(119, 119, 119); text-decoration: underline; margin-right: 25px; display: inline-block; height: 86px; width: 86px;">
+                    <img alt="Deanna Rubin" itemprop="photo" src="https://www.html5rocks.com/static/images/profiles/deannarubin.png" style="border: 3px solid rgb(255, 255, 255); vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 80px; box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px; border-radius: 100%; position: relative; height: 80px;" title="Deanna Rubin" />
+                </a>
+            </section>
+            <section class="meta" style="display: block; font-weight: 400; padding-top: 2px; text-align: left; -webkit-font-smoothing: antialiased; float: left; font-size: 15px; margin: 0px auto;">
+                <div class="authors" style="font-size: 17px; padding-bottom: 6px; color: rgb(68, 68, 68);">
+                    <strong style="font-weight: 800;">By</strong><span>&nbsp;</span><a href="https://www.html5rocks.com/profiles/#deannarubin" style="color: rgb(119, 119, 119); text-decoration: underline;">Deanna Rubin</a>
+                </div>
+                <div class="date">
+                    <time pubdate="" style="display: block; font-size: 15px;"><strong style="font-weight: 800;">Published:</strong><span>&nbsp;</span>November 27th, 2013</time><time class="updated" style="display: block; font-size: 15px;"><strong style="font-weight: 800;">Updated:</strong><span>&nbsp;</span>November 27th, 2013</time><span style="display: block; font-size: 15px;"><strong style="font-weight: 800;">Comments:</strong><span>&nbsp;</span><a class="load-comments" data-disqus-identifier="https://www.html5rocks.com/tutorials/developertools/novdigest/" href="https://www.html5rocks.com/en/tutorials/developertools/novdigest/#disqus_thread" style="color: rgb(119, 119, 119); text-decoration: underline;">0</a></span>
+                </div>
+            </section>
+            <div class="clear" style="clear: both; content: &quot;&quot;; display: block;">
+            </div>
+        </div>
+    </section>
+    <p style="margin: 0.4em 0px 0.8em; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        Chrome DevTools moves fast and we wanted to call your attention to some new functionality and improvements we&#39;ve introduced to a few components. Namely, we&#39;re going to talk about some UI changes, high-resolution JS profiling and new Workspaces features.
+    </p>
+    <ul style="margin: 1em 0px; padding: 0px 0px 0px 40px; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        <li>
+            <p style="margin: 0.4em 0px 0.8em;">
+                High-resolution profiling now goes to .1 millisecond precision
+            </p>
+        </li>
+        <li>
+            <p style="margin: 0.4em 0px 0.8em;">
+                Toolbars rose to the top of Devtools and Overrides moved to the console drawer
+            </p>
+        </li>
+        <li>
+            <p style="margin: 0.4em 0px 0.8em;">
+                Workspaces added several features to support adding/removing/searching files
+            </p>
+        </li>
+    </ul>
+    <h2 id="toc-highresprof" style="color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot;; font-weight: 600; margin: 1.3em 0px 0.7em; clear: both; max-width: 85%; font-size: 24.3px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">High-Resolution Profiling</h2>
+    <p style="margin: 0.4em 0px 0.8em; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        <a href="https://developers.google.com/chrome-developer-tools/docs/cpu-profiling" style="color: rgb(80, 139, 136); text-decoration: underline;">CPU profiling</a><span>&nbsp;</span>is a pretty useful feature for seeing how efficient your Javascript is. In addition to the traditional profile views, we introduced a<span>&nbsp;</span><a href="https://developers.google.com/chrome-developer-tools/docs/flame-chart" style="color: rgb(80, 139, 136); text-decoration: underline;">Flame Chart</a><span>&nbsp;</span>this summer, which visually represents a page&#39;s Javascript processing over time. It can be used to easily view how deep your call stack is going as well as how long the individual functions take to process.<br />
+        <br />
+        Until recently, both the traditional Heavy (bottom up) and Tree (top down) representations, as well as the Flame Chart, would only show processes down to 1 millisecond precision. For most applications, this is fine. However, if you are working on something where speed really matters in the UI, like a game -- 1 millisecond resolution may be too chunky to get meaningful results for what is causing your site to be slow or for your UI to seem laggy.<br />
+        To enable High Resolution Profiling (currently Canary only):
+    </p>
+    <ol style="margin: 1em 0px; padding: 0px 0px 0px 40px; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        <li>
+            <p style="margin: 0.4em 0px 0.8em;">
+                Open DevTools Settings.
+            </p>
+        </li>
+        <li>
+            <p style="margin: 0.4em 0px 0.8em;">
+                On the<span>&nbsp;</span><strong style="font-weight: bold;">General</strong><span>&nbsp;</span>tab, under<span>&nbsp;</span><strong style="font-weight: bold;">Profiler</strong>, turn on<span>&nbsp;</span><strong style="font-weight: bold;">High resolution CPU profiling</strong>.
+            </p>
+        </li>
+    </ol>
+    <p style="margin: 0.4em 0px 0.8em; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        Here&#39;s an example of a Flame Chart seen in normal profiling and with high resolution, where we profile loading the HTML5Rocks.com home page:
+    </p>
+    <figure style="display: block; margin: 0px 0px 1em; text-align: center; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        <img alt="Flame chart with normal resolution" src="https://www.html5rocks.com/en/tutorials/developertools/novdigest/flame-chart-normal.png" style="border: 0px; vertical-align: middle; max-width: 100%; box-sizing: border-box;" />
+    </figure>
+    <figure style="display: block; margin: 0px 0px 1em; text-align: center; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        <img alt="Flame chart with high resolution" src="https://www.html5rocks.com/en/tutorials/developertools/novdigest/flame-chart-high.png" style="border: 0px; vertical-align: middle; max-width: 100%; box-sizing: border-box;" />
+    </figure>
+    <p style="margin: 0.4em 0px 0.8em; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        With normal profiling resolution, process time always gets rounded up to the next millisecond, so a process that only takes 0.1 milliseconds or less still gets reported as taking 1.0 milliseconds, and other processes might not get shown at all in the call stack.<span>&nbsp;</span><br />
+        <br />
+        High-resolution profiling has a large overhead in the Javascript VM, which is why it is turned off by default. While it certainly looks cooler than normal profiling resolution, we recommend only using it if you really need the precision.
+    </p>
+    <h2 id="toc-devtoolsui" style="color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot;; font-weight: 600; margin: 1.3em 0px 0.7em; clear: both; max-width: 85%; font-size: 24.3px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">Devtools UI Improvements</h2>
+    <p style="margin: 0.4em 0px 0.8em; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        While there are always new things being rolled out in Canary, we wanted to call your attention to a few major UI changes: Buttons rising to the top of the UI in general, the Timeline navigation and information panels, and the relocation of Overrides to the Console Drawer.
+    </p>
+    <p style="margin: 0.4em 0px 0.8em; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        First, let&#39;s take a look at where we&#39;re coming from. Because we&#39;re talking about Timeline anyway, I&#39;ll try to kill the first two birds with one pair of screenshots. Here&#39;s what Timeline looks like in Chrome (stable) right now:
+    </p>
+    <figure style="display: block; margin: 0px 0px 1em; text-align: center; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        <img alt="Old Timeline" src="https://www.html5rocks.com/en/tutorials/developertools/novdigest/oldtimeline.png" style="border: 0px; vertical-align: middle; max-width: 100%; box-sizing: border-box;" />
+    </figure>
+    <p style="margin: 0.4em 0px 0.8em; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        And here&#39;s what Timeline looks like now.
+    </p>
+    <figure style="display: block; margin: 0px 0px 1em; text-align: center; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        <img alt="New Timeline" src="https://www.html5rocks.com/en/tutorials/developertools/novdigest/newtimeline.png" style="border: 0px; vertical-align: middle; max-width: 100%; box-sizing: border-box;" />
+    </figure>
+    <p style="margin: 0.4em 0px 0.8em; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        Notice the following things:
+    </p>
+    <ol style="margin: 1em 0px; padding: 0px 0px 0px 40px; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        <li>
+            <p style="margin: 0.4em 0px 0.8em;">
+                The toolbars and buttons are all at the top of the screen now, both for the specific Timeline ones on the left and the general DevTools ones on the right.
+            </p>
+        </li>
+        <li>
+            <p style="margin: 0.4em 0px 0.8em;">
+                The Timeline records now have their nesting structure in the panel to the left, and you can even use the keyboard to scroll through them. In addition to using up and down keys to scroll up and down, you can also use the left and right keys to open and close nested records.
+            </p>
+        </li>
+        <li>
+            <p style="margin: 0.4em 0px 0.8em;">
+                Time details are now displayed in a panel on the right for whichever entry you&#39;ve selected. (You can also hover over other entries to get their information.)
+            </p>
+        </li>
+    </ol>
+    <p style="margin: 0.4em 0px 0.8em; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        Now let&#39;s take a look at the console drawer. To open the console drawer, press Escape from within DevTools or hit the console drawer button<span>&nbsp;</span><img alt="drawer icon" src="https://www.html5rocks.com/en/tutorials/developertools/novdigest/drawericon.png" style="border: 0px; vertical-align: middle; max-width: 100%; box-sizing: border-box;" /><span>&nbsp;</span>and the drawer rolls up from the bottom.
+    </p>
+    <p style="margin: 0.4em 0px 0.8em; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        By default, you will have<span>&nbsp;</span><strong style="font-weight: bold;">Console</strong><span>&nbsp;</span>and<span>&nbsp;</span><strong style="font-weight: bold;">Search</strong><span>&nbsp;</span>tabs there. To get to the functionality formerly known as Overrides, open the DevTools settings and check the box next to &quot;Show &#39;Emulation&#39; view in console drawer&quot;. Close the settings box and you will have an<span>&nbsp;</span><strong style="font-weight: bold;">Emulation</strong><span>&nbsp;</span>tab in the console drawer like the screenshot here:
+    </p>
+    <figure style="display: block; margin: 0px 0px 1em; text-align: center; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        <img alt="Console drawer and overrides" src="https://www.html5rocks.com/en/tutorials/developertools/novdigest/draweroverrides.png" style="border: 0px; vertical-align: middle; max-width: 100%; box-sizing: border-box;" />
+    </figure>
+    <p style="margin: 0.4em 0px 0.8em; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        And you can do all of your emulation there.
+    </p>
+    <p style="margin: 0.4em 0px 0.8em; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        The reason for this change is that before, you would have to go in and out of Settings to change your emulation overrides, and then go back and view your page. Now you can change around your emulation overrides while still manipulating styles.
+    </p>
+    <h2 id="toc-improvedworkspaces" style="color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot;; font-weight: 600; margin: 1.3em 0px 0.7em; clear: both; max-width: 85%; font-size: 24.3px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">Improved Workspaces</h2>
+    <p style="margin: 0.4em 0px 0.8em; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        Workspaces in particular is a feature that can simplify your authoring workflow quite a bit, and yet it doesn&#39;t get nearly as much love as it deserves. With Workspaces, rather than experimenting and making changes in DevTools and having to copy and paste your changes back to your source files, you can make changes in DevTools, see them rendered in the browser, and save them to a persistent local version of your files -- all without leaving Chrome.
+    </p>
+    <p style="margin: 0.4em 0px 0.8em; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        If you haven&#39;t read the<span>&nbsp;</span><a href="http://www.html5rocks.com/en/tutorials/developertools/revolutions2013/" style="color: rgb(80, 139, 136); text-decoration: underline;">Chrome Developer Tools Revolutions 2013</a><span>&nbsp;</span>article yet, go ahead and take a look at that and then come back here to learn how we&#39;ve improved on those features in the last few months.
+    </p>
+    <h3 id="toc-addfiles" style="color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot;; font-weight: 600; margin: 1.3em 0px 0.7em; clear: both; max-width: 85%; font-size: 21.6px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">Adding Files Easier</h3>
+    <p style="margin: 0.4em 0px 0.8em; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        Back at the time of the Revolutions 2013 article,<span>&nbsp;</span><a href="http://www.html5rocks.com/en/tutorials/developertools/revolutions2013/#toc-adding-workspace" style="color: rgb(80, 139, 136); text-decoration: underline;">creating a new workspace</a>required adding the folder to your workspaces and then mapping the folder to a network resource. We&#39;ve simplified this process to a single step: Simply right-click in the left panel of Sources and select<span>&nbsp;</span><strong style="font-weight: bold;">Add Folder to Workspace</strong>. This launches you into a file dialog where you can choose a new folder to add to your Workspaces. (It does<span>&nbsp;</span><em>not</em><span>&nbsp;</span>add the currently highlighted folder to your Workspaces.)
+    </p>
+    <figure style="display: block; margin: 0px 0px 1em; text-align: center; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        <img alt="Add Folder to Workspace" src="https://www.html5rocks.com/en/tutorials/developertools/novdigest/AddFolder.jpg" style="border: 0px; vertical-align: middle; max-width: 100%; box-sizing: border-box;" />
+    </figure>
+    <h3 id="toc-createfiles" style="color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot;; font-weight: 600; margin: 1.3em 0px 0.7em; clear: both; max-width: 85%; font-size: 21.6px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">Creating and Removing Files</h3>
+    <p style="margin: 0.4em 0px 0.8em; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        You can add new files to the local directory you&#39;re using for Workspaces within Workspaces itself now. Simply right-click on a folder in the left Sources panel and select<span>&nbsp;</span><strong style="font-weight: bold;">New File.</strong>
+    </p>
+    <figure style="display: block; margin: 0px 0px 1em; text-align: center; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        <img alt="New File" src="https://www.html5rocks.com/en/tutorials/developertools/novdigest/newfile.png" style="border: 0px; vertical-align: middle; max-width: 100%; box-sizing: border-box;" />
+    </figure>
+    <p style="margin: 0.4em 0px 0.8em; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        You can also remove files from within Workspaces. Right-click on a file in the left Sources panel and select<span>&nbsp;</span><strong style="font-weight: bold;">Delete File.</strong>
+    </p>
+    <figure style="display: block; margin: 0px 0px 1em; text-align: center; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        <img alt="Remove File" src="https://www.html5rocks.com/en/tutorials/developertools/novdigest/removefile.png" style="border: 0px; vertical-align: middle; max-width: 100%; box-sizing: border-box;" />
+    </figure>
+    <p style="margin: 0.4em 0px 0.8em; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        You can also duplicate a file by selecting<span>&nbsp;</span><strong style="font-weight: bold;">Duplicate File</strong>.
+    </p>
+    <h3 id="toc-refresh" style="color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot;; font-weight: 600; margin: 1.3em 0px 0.7em; clear: both; max-width: 85%; font-size: 21.6px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">Refresh</h3>
+    <p style="margin: 0.4em 0px 0.8em; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        Now that you can create new files (or delete files) directly in workspaces, the Sources directory will also automatically refresh and show these new files. If not, you can always right-click on a folder and select<span>&nbsp;</span><strong style="font-weight: bold;">Refresh</strong><span>&nbsp;</span>from the pop-up menu to force a refresh.
+    </p>
+    <p style="margin: 0.4em 0px 0.8em; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        This is also useful if you happen to change your files open in another editor and want the changes to show up in DevTools.
+    </p>
+    <h3 id="toc-searchfiles" style="color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot;; font-weight: 600; margin: 1.3em 0px 0.7em; clear: both; max-width: 85%; font-size: 21.6px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">Search Across Files</h3>
+    <p style="margin: 0.4em 0px 0.8em; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        We&#39;ve refined the interface for searching across files a little bit, and now you can also search for strings across all of the files in your workspaces as well as all of the files loaded into DevTools. You can either search for a string or for a regular expression, and we match every occurrence in every file or page.<br />
+        To search multiple files in Workspaces (currently in Canary):
+    </p>
+    <ol style="margin: 1em 0px; padding: 0px 0px 0px 40px; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        <li>
+            <p style="margin: 0.4em 0px 0.8em;">
+                Open the console drawer by pressing the Escape key, and click the<span>&nbsp;</span><strong style="font-weight: bold;">Search</strong>tab next to<span>&nbsp;</span><strong style="font-weight: bold;">Console</strong><span>&nbsp;</span>to open the Search window
+            </p>
+            <p style="margin: 0.4em 0px 0.8em;">
+                OR
+            </p>
+            <p style="margin: 0.4em 0px 0.8em;">
+                Press<span>&nbsp;</span><kbd style="font-family: Arial, Helvetica, sans-serif; font-size: 1em; padding: 0.1em 0.6em; border: 1px solid rgb(204, 204, 204); background-color: rgb(247, 247, 247); color: rgb(51, 51, 51); box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; border-radius: 3px; display: inline-block; margin: 0px 0.1em; text-shadow: rgb(255, 255, 255) 0px 1px 0px; line-height: 1.5; white-space: nowrap;">Ctrl</kbd><span>&nbsp;</span>+<span>&nbsp;</span><kbd style="font-family: Arial, Helvetica, sans-serif; font-size: 1em; padding: 0.1em 0.6em; border: 1px solid rgb(204, 204, 204); background-color: rgb(247, 247, 247); color: rgb(51, 51, 51); box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; border-radius: 3px; display: inline-block; margin: 0px 0.1em; text-shadow: rgb(255, 255, 255) 0px 1px 0px; line-height: 1.5; white-space: nowrap;">Shift</kbd><span>&nbsp;</span>+<span>&nbsp;</span><kbd style="font-family: Arial, Helvetica, sans-serif; font-size: 1em; padding: 0.1em 0.6em; border: 1px solid rgb(204, 204, 204); background-color: rgb(247, 247, 247); color: rgb(51, 51, 51); box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; border-radius: 3px; display: inline-block; margin: 0px 0.1em; text-shadow: rgb(255, 255, 255) 0px 1px 0px; line-height: 1.5; white-space: nowrap;">F</kbd><span>&nbsp;</span>(<kbd style="font-family: Arial, Helvetica, sans-serif; font-size: 1em; padding: 0.1em 0.6em; border: 1px solid rgb(204, 204, 204); background-color: rgb(247, 247, 247); color: rgb(51, 51, 51); box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; border-radius: 3px; display: inline-block; margin: 0px 0.1em; text-shadow: rgb(255, 255, 255) 0px 1px 0px; line-height: 1.5; white-space: nowrap;">Cmd</kbd><span>&nbsp;</span>+<span>&nbsp;</span><kbd style="font-family: Arial, Helvetica, sans-serif; font-size: 1em; padding: 0.1em 0.6em; border: 1px solid rgb(204, 204, 204); background-color: rgb(247, 247, 247); color: rgb(51, 51, 51); box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; border-radius: 3px; display: inline-block; margin: 0px 0.1em; text-shadow: rgb(255, 255, 255) 0px 1px 0px; line-height: 1.5; white-space: nowrap;">Opt</kbd><span>&nbsp;</span>+<span>&nbsp;</span><kbd style="font-family: Arial, Helvetica, sans-serif; font-size: 1em; padding: 0.1em 0.6em; border: 1px solid rgb(204, 204, 204); background-color: rgb(247, 247, 247); color: rgb(51, 51, 51); box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; border-radius: 3px; display: inline-block; margin: 0px 0.1em; text-shadow: rgb(255, 255, 255) 0px 1px 0px; line-height: 1.5; white-space: nowrap;">F</kbd><span>&nbsp;</span>on
+                Mac) to open the Search window.
+            </p>
+        </li>
+        <li>
+            <p style="margin: 0.4em 0px 0.8em;">
+                Type your query into the<span>&nbsp;</span><strong style="font-weight: bold;">Search Sources</strong><span>&nbsp;</span>box, and hit Enter. If your query is a regular expression or needs to be case-insensitive, click the appropriate box.
+            </p>
+        </li>
+    </ol>
+    <figure style="display: block; margin: 0px 0px 1em; text-align: center; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        <img alt="Search Across Files" src="https://www.html5rocks.com/en/tutorials/developertools/novdigest/searchacrossfiles.png" style="border: 0px; vertical-align: middle; max-width: 100%; box-sizing: border-box;" />
+    </figure>
+    <h3 id="toc-ignorefiles" style="color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot;; font-weight: 600; margin: 1.3em 0px 0.7em; clear: both; max-width: 85%; font-size: 21.6px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">Ignore Lists</h3>
+    <p style="margin: 0.4em 0px 0.8em; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        Searching through the text of files or filtering through filenames can get very tedious if you have a ton of .git files or README.md files cluttering up your results.
+    </p>
+    <p style="margin: 0.4em 0px 0.8em; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        Thus, we&#39;ve added an ignore list feature into Workspaces so you can exclude certain file types or folders when viewing and searching your workspace.
+    </p>
+    <p style="margin: 0.4em 0px 0.8em; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        Here&#39;s how you can view and change the current shared ignorelist in Workspaces:
+    </p>
+    <ol style="margin: 1em 0px; padding: 0px 0px 0px 40px; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        <li>
+            <p style="margin: 0.4em 0px 0.8em;">
+                Open DevTools<span>&nbsp;</span><strong style="font-weight: bold;">Settings</strong>.
+            </p>
+        </li>
+        <li>
+            <p style="margin: 0.4em 0px 0.8em;">
+                Click<span>&nbsp;</span><strong style="font-weight: bold;">Workspace</strong>.
+            </p>
+        </li>
+        <li>
+            <p style="margin: 0.4em 0px 0.8em;">
+                Under<span>&nbsp;</span><strong style="font-weight: bold;">Common</strong>, within the<span>&nbsp;</span><strong style="font-weight: bold;">Folder exclude pattern</strong><span>&nbsp;</span>box, you can view and/or edit the patterns.
+            </p>
+        </li>
+    </ol>
+    <figure style="display: block; margin: 0px 0px 1em; text-align: center; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        <img alt="Exclude file patterns" src="https://www.html5rocks.com/en/tutorials/developertools/novdigest/exclude.png" style="border: 0px; vertical-align: middle; max-width: 100%; box-sizing: border-box;" />
+    </figure>
+    <p style="margin: 0.4em 0px 0.8em; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        We ship with these default global exclude patterns:
+    </p>
+    <blockquote style="margin: 1.5em 0px; color: rgb(74, 126, 123); font-style: italic; padding: 0.9em 0.7em 1.2em; font-weight: normal; position: relative; box-sizing: border-box; border-top: 1px dotted rgb(74, 126, 123); border-bottom: 1px dotted rgb(74, 126, 123); line-height: 1.4; clear: both; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        <p style="margin: 0.4em 0px 0.8em;">
+            /.git/|/.sass-cache/|/.hg/|/.idea/|/.svn/|/.cache/|/.project/|/.DS<em>Store$|/.Trashes$|/.Spotlight-V100$|/.AppleDouble$|/.LSOverride$|/Icon$|/.</em>.*$
+        </p>
+    </blockquote>
+    <p style="margin: 0.4em 0px 0.8em; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        This regex excludes metadata from Git, SVN, Mercurial, project files from Eclipse and IntelliJ, OS X DS_Store and Trash files, and a few other things worth ignoring like cache from Sass. Their entire folder, including any children are excluded from the UI to not show up in the UI and to not show up when searching through files.
+    </p>
+    <h4 id="toc-specificignorelists" style="color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot;; font-weight: 600; margin: 1.3em 0px 0.7em; clear: both; max-width: 85%; font-size: 19.8px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">Workspace-specific Ignore Lists</h4>
+    <p style="margin: 0.4em 0px 0.8em; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        To get more specific, you can also choose to exclude files and folders inside your particular workspace to reduce clutter in searches. Excluded folders will not show up in the sources directory either.
+    </p>
+    <p style="margin: 0.4em 0px 0.8em; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        To exclude an entire folder from your workspace, right-click on the folder in the left Sources panel and select<span>&nbsp;</span><strong style="font-weight: bold;">Exclude Folder.</strong><br />
+        To see the mappings and excluded folders for a given workspace folder:
+    </p>
+    <ol style="margin: 1em 0px; padding: 0px 0px 0px 40px; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        <li>
+            <p style="margin: 0.4em 0px 0.8em;">
+                Open the DevTools Settings.
+            </p>
+        </li>
+        <li>
+            <p style="margin: 0.4em 0px 0.8em;">
+                Click<span>&nbsp;</span><strong style="font-weight: bold;">Workspace</strong>.
+            </p>
+        </li>
+        <li>
+            <p style="margin: 0.4em 0px 0.8em;">
+                Highlight the folder you&#39;re interested in.
+            </p>
+        </li>
+        <li>
+            <p style="margin: 0.4em 0px 0.8em;">
+                Click<span>&nbsp;</span><strong style="font-weight: bold;">Edit</strong><span>&nbsp;</span>and the &quot;Edit file system&quot; window appears; you can add or remove mappings and/or excluded folders from this window.
+            </p>
+        </li>
+    </ol>
+    <figure style="display: block; margin: 0px 0px 1em; text-align: center; color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        <img alt="Exclude folders" src="https://www.html5rocks.com/en/tutorials/developertools/novdigest/excludefolders.png" style="border: 0px; vertical-align: middle; max-width: 100%; box-sizing: border-box;" />
+    </figure>
+</body>
+</html>
