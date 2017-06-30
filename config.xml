@@ -5,24 +5,24 @@
         version="1.0">
   
   <name>Windows 10 Installation Test</name>
-  <description>Windows 10 Installation Test, Firoz Khan</description>
-  <author href="http://www.voith.com" email="firoz.khan@voith.com">Firoz Khan</author>
+  <description>Windows 10 Installation Test, Voith Digital Solutions Inc</description>
+  <author href="http://www.voith.com" email="firoz.khan@voith.com">Voith Digital Solutions Inc</author>
 
     <preference name="windows-identity-name" value="voith.dsi.installationtest" />
 
     <!-- Windows only preferences -->
-    <!--<preference name="windows-appx-target" value="uap" />-->
+    <preference name="windows-appx-target" value="uap" />
     <preference name="windows-arch" value="arm" />
     <preference name="windows-phone-target-version" value="10.0" />
     <preference name="windows-target-version" value="10.0" />
-    <!--<preference name="Windows.Universal" value="10.0.10240.0" />-->
+    <preference name="Windows.Universal" value="10.0.10240.0" />
     <preference name="WindowsDefaultUriPrefix" value="ms-appx://" />
-    <!--<preference name="Windows.Mobile-MaxVersionTested" value="10.0.10031.0" />-->
-    <!--<preference name="Windows.Universal-MinVersion" value="10.0.0.0" />-->
+    <preference name="Windows.Mobile-MaxVersionTested" value="10.0.10031.0" />
+    <preference name="Windows.Universal-MinVersion" value="10.0.0.0" />
     <preference name="WindowsStoreIdentityName" value="voith.dsi.installationtest" />
     <preference name="WindowsStorePublisherName" value="CN=Voith Digital Solutions Inc, O=Voith Digital Solutions Inc, L=York, S=PA, C=US" />
     <preference name="WindowsToastCapable" value="true" />
-    <!--<preference name="uap-target-min-version" value="10.0.10586.0" />-->
+    <preference name="uap-target-min-version" value="10.0.10586.0" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
 
